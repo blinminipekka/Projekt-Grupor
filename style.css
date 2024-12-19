@@ -1,0 +1,33 @@
+body{
+    background-color: #ffb4a2;
+}
+#nav-bar {
+    background-color: #bc4749;
+    height: 80px;
+    position: sticky;
+    
+}
+.nav-item{
+
+
+}
+.nav-item:hover{
+    transition-duration: 300ms;
+    background-color: #c1121f;
+    color: white;
+}
+.btn{
+    background-color: white;
+}
+
+#CarVibe{
+    width: 200px;
+    height: 200px;
+    padding-top: 17px;
+
+}
+.navbar{
+    height: 80px;
+}
+
+   
