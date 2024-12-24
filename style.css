@@ -43,3 +43,44 @@ body{
         margin: 0.5rem 0;
     }
 }
+#carouselExampleCaptions{
+    margin-top: 20px;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+}
+#a1{
+    margin-left: 25%;
+}
+#a2{
+    margin-left: 50%;
+}
+#a3{
+    margin-left: 25%;
+}
+#a4{
+    margin-left: 50%;
+}
+.card{
+    margin: 4%;
+}
+.card-img-top{
+    width: 100%;
+    height: 250px;
+}
+.card-body{
+    background-color: #023e8a;
+    color: white;
+}
+.button{
+    background-color: #415a77;
+}
+.carss{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+h1{
+    align-items: center;
+    padding-left: 40%;
+}
