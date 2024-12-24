@@ -1,19 +1,16 @@
 body{
-    background-color: #ffb4a2;
+    background-color: #bde0fe;
 }
 #nav-bar {
-    background-color: #bc4749;
+    background-color: #219ebc;
     height: 80px;
     position: sticky;
     
 }
-.nav-item{
 
-
-}
 .nav-item:hover{
     transition-duration: 300ms;
-    background-color: #c1121f;
+    background-color: #90e0ef;
     color: white;
 }
 .btn{
@@ -24,10 +21,25 @@ body{
     width: 200px;
     height: 200px;
     padding-top: 17px;
+    position:static;
 
 }
 .navbar{
-    height: 80px;
+    height: 100%;
+    padding: 0;
 }
-
-   
+@media (max-width: 768px){
+    #CarVibe {
+        width: 30%;
+        padding-top: 5px;
+    }
+    #nav-bar {
+        height: auto;
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+    .nav-item{
+        margin: 0.5rem 0;
+    }
+}
