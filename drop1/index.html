@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz - Car Showcase</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" id="nav-bar">
+            <img src="img/mercedes-logo.png" alt="Mercedes-Benz Logo" id="CarVibe">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mercedes Showcase Section -->
+    <section id="car-showcase" class="container mt-5">
+        <h2 class="text-center mb-4">Featured Mercedes-Benz Cars</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/mercedes-s-class.jpg" class="card-img-top" alt="Mercedes S-Class">
+                    <div class="card-body">
+                        <h5 class="card-title">Mercedes-Benz S-Class</h5>
+                        <p class="card-text">The S-Class is a symbol of luxury, offering an unparalleled driving experience with cutting-edge technology.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/mercedes-c-class.jpg" class="card-img-top" alt="Mercedes C-Class">
+                    <div class="card-body">
+                        <h5 class="card-title">Mercedes-Benz C-Class</h5>
+                        <p class="card-text">A compact executive car with a perfect blend of style, performance, and advanced safety features.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/mercedes-glc.jpg" class="card-img-top" alt="Mercedes GLC">
+                    <div class="card-body">
+                        <h5 class="card-title">Mercedes-Benz GLC</h5>
+                        <p class="card-text">An SUV with exceptional off-road capabilities, combined with Mercedes’ luxury and performance.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mercedes Details Section -->
+    <section id="car-details" class="container mt-5">
+        <h2 class="text-center mb-4">Mercedes-Benz Car Details</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Engine Specifications</h4>
+                <ul>
+                    <li>Engine Type: 4.0L V8 Biturbo (S-Class)</li>
+                    <li>Horsepower: 503 hp (S-Class)</li>
+                    <li>Transmission: 9-Speed Automatic</li>
+                    <li>Fuel Efficiency: 25 mpg (C-Class)</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4>Performance Features</h4>
+                <ul>
+                    <li>Top Speed: 155 mph (S-Class)</li>
+                    <li>Acceleration (0-60 mph): 4.1 seconds (S-Class)</li>
+                    <li>Braking: Adaptive Brake System</li>
+                    <li>Suspension: AIRMATIC Air Suspension</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="container mt-5 mb-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <!-- ChatBot Script (Optional) -->
+    <script>
+        window.__ow = window.__ow || {};
+        window.__ow.organizationId = "d5c56e20-ddd8-4225-bc8d-1213bbf95ade";
+        window.__ow.template_id = "b4810370-75fc-4d8d-a245-d98e623e06ff";
+        window.__ow.integration_name = "manual_settings";
+        window.__ow.product_name = "chatbot";
+        ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[OpenWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.openwidget.com/openwidget.js",t.head.appendChild(n)}};!n.__ow.asyncInit&&e.init(),n.OpenWidget=n.OpenWidget||e}(window,document,[].slice))
+    </script>
+    <noscript>You need to <a href="https://www.chatbot.com/help/chat-widget/enable-javascript-in-your-browser/" rel="noopener nofollow">enable JavaScript</a> in order to use the AI chatbot tool powered by <a href="https://www.chatbot.com/" rel="noopener nofollow" target="_blank">ChatBot</a></noscript>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
