@@ -1,45 +1,25 @@
-body{
-    background-color: #bde0fe;
-}
-#nav-bar {
-    background-color: #219ebc;
-    height: 80px;
-    position: sticky;
-    
+/* Background color for the page */
+body {
+    background-color: #bde0fe; /* Light pastel blue */
 }
 
-.nav-item:hover{
-    transition-duration: 300ms;
-    background-color: #90e0ef;
+/* Navbar styling */
+.navbar {
+    background-color: #219ebc; /* Bright blue navbar */
+}
+
+/* Button styling for blue buttons */
+.btn {
+    background-color: #219ebc;
     color: white;
 }
-.btn{
-    background-color: white;
+
+.btn:hover {
+    background-color: #bde0fe; /* Light blue on hover */
+    color: #219ebc; /* Darker text for contrast on hover */
 }
 
-#CarVibe{
-    width: 200px;
-    height: 200px;
-    padding-top: 17px;
-    position:static;
-
-}
-.navbar{
-    height: 100%;
-    padding: 0;
-}
-@media (max-width: 768px){
-    #CarVibe {
-        width: 30%;
-        padding-top: 5px;
-    }
-    #nav-bar {
-        height: auto;
-    }
-    .navbar-collapse {
-        text-align: center;
-    }
-    .nav-item{
-        margin: 0.5rem 0;
-    }
+/* Card Titles */
+.card-title {
+    color: #219ebc; /* Bright blue text for card titles */
 }

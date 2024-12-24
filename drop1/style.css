@@ -1,0 +1,131 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #bde0fe; /* Light blue background */
+}
+
+/* Navbar Styles */
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#CarVibe {
+    width: 150px; /* Adjust size of logo */
+    height: auto;
+}
+
+/* Card Section */
+.card {
+    border-radius: 8px; /* Rounded corners for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Card zoom effect on hover */
+}
+
+/* Buttons */
+.btn {
+    border-radius: 20px; /* Rounded button edges */
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #1d75a5; /* Darker blue on hover */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #219ebc;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra stripes */
+}
+
+tbody tr:hover {
+    background-color: #e0f7fa; /* Hover effect for rows */
+}
+
+/* Carousel (Slideshow) */
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover; /* Ensures images fill the carousel properly */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #219ebc; /* Blue arrows */
+}
+
+/* Contact Form */
+form .form-label {
+    font-weight: bold;
+}
+
+form .form-control {
+    border-radius: 8px; /* Rounded input fields */
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+form .form-control:focus {
+    border-color: #219ebc; /* Focused input field with blue border */
+    box-shadow: 0 0 5px rgba(33, 158, 188, 0.5);
+}
+
+/* Section Styling */
+section {
+    margin-top: 60px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #219ebc;
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: auto;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    #nav-bar {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%; /* Make buttons full-width on mobile */
+    }
+
+    table {
+        font-size: 14px; /* Smaller font for tables on mobile */
+    }
+}
