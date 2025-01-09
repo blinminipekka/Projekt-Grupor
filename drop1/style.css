@@ -129,3 +129,79 @@ h2 {
         font-size: 14px; /* Smaller font for tables on mobile */
     }
 }
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 50px 0;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-container div {
+    width: 24%;
+    margin-bottom: 20px;
+}
+
+.footer-about, .footer-links, .footer-contact, .footer-social {
+    flex: 1;
+}
+
+.footer-about h3, .footer-links h3, .footer-contact h3, .footer-social h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-about p, .footer-contact p, .footer-links ul, .footer-social ul {
+    font-size: 14px;
+}
+
+.footer-links ul, .footer-social ul {
+    list-style: none;
+}
+
+.footer-links li, .footer-social li {
+    margin-bottom: 5px;
+}
+
+.footer-links a, .footer-social a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-links a:hover, .footer-social a:hover {
+    color: #f39c12;
+}
+#CarVibe{
+    width: 50px;
+    height: 50px;
+
+}
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #1d1d1d;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-container div {
+        width: 100%;
+    }
+}
