@@ -161,4 +161,52 @@ footer {
 .titleee{
     display: inline;
     justify-content: center;
+    position: static;
+    
 }
+#txt{
+    justify-content: center;
+    margin-left: 45%;
+    padding-left: 50%;
+}
+.titleee h1{
+    padding: 0;
+}
+/* Container for the featured cars (BMW, Audi, Mercedes) */
+.carss {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next row if needed */
+    justify-content: center; /* Center the content */
+    gap: 20px; /* Add space between the cards */
+    margin-top: 30px;
+  }
+  
+  /* Styling for each individual card */
+  .card {
+    width: 18rem; /* Consistent card width */
+    margin-bottom: 20px; /* Add spacing below each card */
+  }
+  
+  /* Title for each featured car section */
+  .titleee {
+    text-align: left; /* Align the title to the left */
+    width: 100%; /* Ensure the title takes full width */
+    margin-bottom: 20px; /* Space between the title and the cards */
+  }
+  
+  /* Adjustments for small screens to fit the layout better */
+  @media (max-width: 768px) {
+    .carss {
+      justify-content: space-evenly; /* Distribute cards evenly on small screens */
+    }
+  
+    .card {
+      width: 15rem; /* Reduce card width on smaller screens */
+    }
+  
+    .titleee {
+      text-align: center; /* Center title on small screens */
+    }
+  }
+  
+  
