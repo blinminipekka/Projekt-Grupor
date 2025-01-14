@@ -148,3 +148,10 @@ footer {
         width: 100%;
     }
 }
+/* Button styling for both modes */
+#darkModeToggle {
+    transition: transform 0.2s ease;
+}
+.carss{
+    margin-left: 12%;
+}
