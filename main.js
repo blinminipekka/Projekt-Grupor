@@ -1,3 +1,26 @@
+var full_name = document.getElementById("name").value;
+var email = document.getElementById("email").value
+var message = document.getElementById("message").value
+
+var name_test = /^[A-Za-z]{3,}[A-Za-z]*$/;
+var email_test = /^[a-zA-Z0-9._%+-]+@\.co$/;
+var message_test = /^(?=[^a-zA-Z]*[a-zA-Z])[^a-zA-Z]*[a-zA-Z]{3,}[^a-zA-Z]*$/ ;
+
+
+function form_validation(){
+    if(!name_test.test(full_name)){
+        alert("Name Must not contain numbers or symbols");
+    }
+    if(!email_test.test(email)){
+        alert("Email Must contain an @ and .co atleast");
+    }
+    if(!message_test.test(message)){
+        alert("Message must contain atleast 3 characters");
+    }
+
+var buton = document.getElementById("buton")
+
+}
 $(document).ready(function () {
     // Style the button as a "sticker" on the left side
     $("#darkModeToggle").css({
@@ -49,3 +72,9 @@ $(document).ready(function () {
         }
     });
 });
+
+document.getElementById('name').addEventListener('input', function(event) {
+    var name = event.target.value;
+    event.target.value = name.replace(/[^a-zA-Z\s]/g, '');
+});
+ document.getElementById("buton").addEventListener("click", form_validation);
